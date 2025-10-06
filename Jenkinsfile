@@ -73,7 +73,7 @@ pipeline {
                         reportName: 'Playwright HTML Report',
                         useWrapperFileDirectory: true
                     ])  
-                    junit stadioRetention: 'ALL', testResults: 'reports-e2e/junit.xml'
+                    junit testResults: 'reports-e2e/junit.xml', keepLongStdio: true
                 }
             }
         }
